@@ -1,10 +1,11 @@
+package exercicio10;
 public class MergeSort {
 
-	static void ordenarPorMerge(int vetor[], int auxiliar[], int inicio, int fim) {
+	static void ordenar (int vetor[], int auxiliar[], int inicio, int fim) {
 		if (inicio < fim) {
 			int meio = (inicio + fim) / 2;
-			ordenarPorMerge(vetor, auxiliar, inicio, meio);
-			ordenarPorMerge(vetor, auxiliar, meio + 1, fim);
+			ordenar(vetor, auxiliar, inicio, meio);
+			ordenar(vetor, auxiliar, meio + 1, fim);
 			intercalacao(vetor, auxiliar, inicio, meio, fim);
 		}
 	}

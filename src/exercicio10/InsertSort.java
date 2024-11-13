@@ -1,5 +1,6 @@
+package exercicio10;
 public class InsertSort {
-    public static void ordenarPorInsert(int[] vetor) {
+    public static void ordenar (int[] vetor) {
         for (int i = 1; i < vetor.length; i++) {
             int key = vetor[i];
             int j = i - 1;

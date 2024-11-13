@@ -1,9 +1,10 @@
+package exercicio10;
 import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
         Random random = new Random();
-        int tamanhoVetor = 10;
+        int tamanhoVetor = 1000;
 
         int[] vetor = new int[tamanhoVetor];
         int[] auxiliar = new int[tamanhoVetor]; 
@@ -16,7 +17,7 @@ public class Main {
         int[] vetorMerge = vetor.clone(); 
         long tempoInicial = System.nanoTime();
 
-        MergeSort.ordenarPorMerge(vetorMerge, auxiliar, 0, vetorMerge.length - 1);
+        MergeSort.ordenar(vetorMerge, auxiliar, 0, vetorMerge.length - 1);
 
         long tempoFinal = System.nanoTime();
         long tempoTotal1 = (tempoFinal - tempoInicial);
@@ -26,7 +27,7 @@ public class Main {
         int[] vetorBubble = vetor.clone();
         tempoInicial = System.nanoTime();
 
-        BubbleSort.ordenarPorBubble(vetorBubble);
+        BubbleSort.ordenar(vetorBubble);
 
         tempoFinal = System.nanoTime();
         long tempoTotal2 = (tempoFinal - tempoInicial);
@@ -36,7 +37,7 @@ public class Main {
         int[] vetorInsertion = vetor.clone();
         tempoInicial = System.nanoTime();
 
-        InsertSort.ordenarPorInsert(vetorInsertion);
+        InsertSort.ordenar(vetorInsertion);
 
         tempoFinal = System.nanoTime();
         long tempoTotal3 = (tempoFinal - tempoInicial);
@@ -46,7 +47,7 @@ public class Main {
         int[] vetorSelection = vetor.clone();
         tempoInicial = System.nanoTime();
 
-        SelectionSort.ordenarPorSelection(vetorSelection);
+        SelectionSort.ordenar(vetorSelection);
 
         tempoFinal = System.nanoTime();
         long tempoTotal4 = (tempoFinal - tempoInicial);

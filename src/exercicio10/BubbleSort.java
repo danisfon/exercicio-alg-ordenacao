@@ -1,5 +1,6 @@
+package exercicio10;
 public class BubbleSort {
-    public static void ordenarPorBubble(int[] vetor) {
+    public static void ordenar (int[] vetor) {
         for (int i = 0; i < vetor.length - 1; i++) {
             for (int j = 0; j < vetor.length - 1 - i; j++) {
                 if (vetor[j] > vetor[j + 1]) {
